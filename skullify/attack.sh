@@ -1,5 +1,5 @@
 #!/bin/sh
-for filename in *.jpg *.png *.svg;
+for filename in *.jpg *.png
 do
 	echo "Skullify $filename"
 	cp skull.jpg $filename
